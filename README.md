@@ -44,3 +44,30 @@ While(number1<0)
     Console.WriteLine(number1);
     number=number+1;
 }
+// Задача 10: Напишите программу, которая принимает на вход 
+//трёхзначное число и на выходе показывает вторую цифру этого числа.
+
+
+int num=Random().Next(100, 1000);
+
+Console.WriteLine(num);
+int num1=num%100;
+int num2=num1/10;
+
+Console.WriteLine(num2);
+
+__________
+//Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, 
+//и проверяет, является ли этот день выходным.
+
+int num=new Random().Next(1,8);
+
+Console.WriteLine(num);
+if ((num==6)||(num==7))
+{
+    Console.WriteLine("Да");
+}
+else
+{
+    Console.WriteLine("Нет");
+}
